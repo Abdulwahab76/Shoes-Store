@@ -1,38 +1,232 @@
-.App {
-  text-align: center;
+body {
+    text-align: center;
+}
+* {
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+.Product {
+    display: flex;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.product-items {
+    margin: 20px;
+    width: 300px;
+
+    background-color: rgb(231, 229, 229);
+    padding: 10px;
+    box-shadow: 1px 1px 4px grey;
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-boxes {
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 6px;
+    padding-bottom: 22px;
+    padding-top: 5px;
+}
+.main-boxes .Cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.main-box:hover {
+    transition: 0.2s;
+    transform: scale(1.1);
+}
+.main-cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+}
+button {
+    outline: none;
+}
+.shoes h1 {
+    color: #ffce32;
+}
+.shoes p {
+    font-weight: 500;
+    background-color: #ffce32;
+    display: inline;
+    padding: 1px 6px;
+}
+.main-box {
+    width: 268px;
+    /* margin: auto; */
+    margin: 10px;
+    position: relative;
+    text-align: center;
+    font-family: arial;
+    background-color: white;
+    border: 1px solid rgb(177, 175, 175);
+}
+.main-box button:hover {
+    opacity: 0.7;
+}
+.main-box .heart {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+.main-box .heart img {
+    width: 100%;
+    height: 100%;
+}
+.main-box .heart i {
+    font-size: 25px;
+    margin: 0;
+}
+.cards {
+    width: 600px;
+    height: 200px;
+}
+.card-image {
+    width: 100%;
+}
+.card-image img {
+    width: 150px;
+    height: 150px;
+    margin-top: 5px;
+}
+.price {
+    height: 100px;
+    border-left: 5px solid #ffce32;
+    padding-top: 10px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.price h3 {
+    text-align: left;
+    padding-left: 20px;
+    padding-bottom: 4px;
+    color: #002f34;
+    font-size: 20px;
+}
+.price p {
+    text-align: left;
+    padding-left: 20px;
+    color: rgb(136, 135, 135);
+}
+.navbar {
+    background-color: #ffce32;
+}
+.back {
+    background-image: url("https://media-assets-01.thedrum.com/cache/images/thedrum-prod/s3-screen_shot_2019-09-03_at_22.21.29--default--1280.png");
+    height: 620px;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: 100%;
+}
+.logo {
+    display: flex;
+
+    padding: 10px;
+    font-weight: bolder;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    color: black;
+}
+.logo h2 {
+    background-color: #ffce32;
+    padding: 13px;
+    border-radius: 40px;
+    font-size: 17px;
+}
+.logo h2:hover {
+    background-color: white;
+    transition: 0.6s;
+    color: black;
+    border: 1px solid #ffce32;
+    cursor: pointer;
+}
+.main-product-head {
+    display: inline-block;
+    padding: 20px;
+    background-color: white;
+
+    color: #2edac2;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.main-product {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
 }
-
-.App-link {
-  color: #61dafb;
+.main-product h1 {
+    text-align: left;
+    line-height: 45px;
+    font-size: 40px;
 }
+.main-product p {
+    font-weight: 500;
+    margin-top: 10px;
+}
+.main-product u {
+    color: #ffce32;
+}
+.main-product button {
+    padding: 10px 30px;
+    border: none;
+    font-weight: bold;
+    color: black;
+    background-color: #ffce32;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.main-product button:hover {
+    background-color: white;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    color: black;
+    border: 1px solid #ffce32;
+    transform: translateX(60px);
+    transition: 0.6s;
+}
+.product-image img {
+    width: 410px;
+}
+.main-product {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.animated {
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+a {
+    text-decoration: none;
+    outline: none;
+}
+@-webkit-keyframes up-down {
+    0% {
+        transform: translateY(40px);
+    }
+    100% {
+        transform: translateY(-40px);
+    }
+}
+@keyframes up-down {
+    0% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
 }
